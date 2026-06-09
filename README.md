@@ -1,4 +1,0 @@
-# 404Langley 🤍
-
-A pixel-style aesthetic personal profile website with a retro UI design.  
-Built using pure HTML, CSS, and JavaScript.
