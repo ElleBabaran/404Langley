@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404Langley 🤍</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Press Start 2P', monospace; background: #fdf4ff; min-height: 100vh; display: flex; justify-content: center; padding: 0 0 4rem; }
+    .wrap { width: 100%; max-width: 500px; display: flex; flex-direction: column; align-items: center; padding: 0 1.25rem 3rem; }
+    .sky-canvas { width: 100%; height: 160px; overflow: hidden; image-rendering: pixelated; }
+    .sky-row { display: grid; grid-template-columns: repeat(20, 1fr); }
+    .px { display: block; }
+    .avatar-outer { margin-top: -44px; z-index: 2; position: relative; display: flex; flex-direction: column; align-items: center; }
+    .avatar { width: 88px; height: 88px; border: 4px solid #f9d6f0; image-rendering: pixelated; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #e8c5f0; }
+    .avatar img { width: 100%; height: 100%; object-fit: cover; }
+    .name { font-size: 13px; color: #4a1060; margin-top: 14px; margin-bottom: 6px; text-align: center; letter-spacing: 0.02em; }
+    .handle { font-size: 8px; color: #b06abf; margin-bottom: 8px; }
+    .bio { font-size: 7px; color: #7a4a8a; text-align: center; max-width: 300px; margin-bottom: 1.75rem; line-height: 2; }
+    .divider-px { width: 100%; height: 4px; background: #fff; margin: 10px 0; }
+    .section-label { font-size: 7px; color: #c084d4; align-self: flex-start; margin-bottom: 8px; margin-top: 4px; letter-spacing: 0.08em; text-transform: uppercase; }
+    .links { width: 100%; display: flex; flex-direction: column; gap: 9px; }
+    .link-btn { width: 100%; display: flex; align-items: center; gap: 12px; padding: 13px 16px; background: #fdf4ff; border: 2px solid #e5b8f4; text-decoration: none; color: #3b0764; font-family: 'Press Start 2P', monospace; cursor: pointer; transition: background 0.1s, border-color 0.1s; }
+    .link-btn:hover { background: #f5e0ff; border-color: #c084d4; }
+    .link-icon { width: 38px; height: 38px; border: 2px solid; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 18px; }
+    .link-text { flex: 1; }
+    .link-title { font-size: 9px; font-family: 'Press Start 2P', monospace; color: #3b0764; }
+    .link-sub { font-size: 7px; font-family: 'Press Start 2P', monospace; color: #b06abf; margin-top: 5px; line-height: 1.8; }
+    .link-arrow { color: #dba8f0; font-size: 14px; }
+    .socials-row { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; width: 100%; margin-top: 4px; }
+    .social-pill { display: flex; align-items: center; gap: 6px; padding: 8px 12px; background: #fdf4ff; border: 2px solid #e5b8f4; font-size: 7px; font-family: 'Press Start 2P', monospace; color: #7b3fa0; text-decoration: none; cursor: pointer; transition: background 0.1s; }
+    .social-pill:hover { background: #f5e0ff; border-color: #c084d4; }
+    .social-pill i { font-size: 14px; }
+    .footer { margin-top: 2rem; font-size: 7px; color: #dba8f0; }
+  </style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="sky-canvas" id="sky"></div>
+
+  <div class="avatar-outer">
+    <div class="avatar">
+      
+      <img src="pfpics.png" alt="404Langley" id="avatar-img" style="display:none;">
+      <div id="avatar-ph" style="display:flex;flex-direction:column;align-items:center;gap:4px;color:#7b3fa0;font-size:9px;font-family:'Press Start 2P',monospace;text-align:center;line-height:1.6;">
+        <i class="ti ti-user" style="font-size:28px;"></i>
+      </div>
+    </div>
+  </div>
+
+  <p class="name">404Langley 🤍</p>
+  <p class="handle">@404langley</p>
+  <p class="bio">student · dev · daydreamer<br>just figuring it out one pixel at a time</p>
+
+  <div class="links">
+    <p class="section-label">// connect</p>
+
+    <a class="link-btn" href="https://www.linkedin.com/in/pamela-babaran-43a116334/" target="_blank" rel="noopener">
+      <div class="link-icon" style="background:#ede0ff;border-color:#9333ea;color:#6b21a8;">
+        <i class="ti ti-brand-linkedin"></i>
+      </div>
+      <div class="link-text">
+        <div class="link-title">LinkedIn</div>
+        <div class="link-sub">let's connect professionally</div>
+      </div>
+      <i class="ti ti-chevron-right link-arrow"></i>
+    </a>
+
+    <a class="link-btn" href="https://github.com/ElleBabaran" target="_blank" rel="noopener">
+      <div class="link-icon" style="background:#f9d6f0;border-color:#c026d3;color:#86198f;">
+        <i class="ti ti-brand-github"></i>
+      </div>
+      <div class="link-text">
+        <div class="link-title">GitHub</div>
+        <div class="link-sub">check out my projects</div>
+      </div>
+      <i class="ti ti-chevron-right link-arrow"></i>
+    </a>
+
+    <a class="link-btn" href="#gcash-modal" onclick="document.getElementById('gcash-modal').style.display='flex';return false;">
+      <div class="link-icon" style="background:#fce7f3;border-color:#db2777;color:#9d174d;">
+        <i class="ti ti-cash"></i>
+      </div>
+      <div class="link-text">
+        <div class="link-title">GCash</div>
+        <div class="link-sub">send me tips 💚</div>
+      </div>
+      <i class="ti ti-chevron-right link-arrow"></i>
+    </a>
+
+    <div class="divider-px"></div>
+    <p class="section-label">// featured</p>
+
+    <a class="link-btn" href="https://learn.microsoft.com/copilot?WT.mc_id=academic&wt.mc_id=studentamb_515912" target="_blank" rel="noopener">
+      <div class="link-icon" style="background:#ede0ff;border-color:#7c3aed;color:#4c1d95;">
+        <i class="ti ti-robot"></i>
+      </div>
+      <div class="link-text">
+        <div class="link-title">Learning AI</div>
+        <div class="link-sub">free resources via microsoft</div>
+      </div>
+      <i class="ti ti-external-link link-arrow"></i>
+    </a>
+
+    <div class="divider-px"></div>
+    <p class="section-label">// find me on</p>
+
+    <div class="socials-row">
+      <a class="social-pill" href="https://www.instagram.com/404langley_?igsh=OTRnbzAxa2Z5czY4" target="_blank" rel="noopener">
+        <i class="ti ti-brand-instagram"></i> Instagram
+      </a>
+      <a class="social-pill" href="https://www.facebook.com/share/1CXLoWMxSi/" target="_blank" rel="noopener">
+        <i class="ti ti-brand-facebook"></i> Facebook
+      </a>
+    </div>
+  </div>
+
+  <p class="footer">404langley · 2025</p>
+</div>
+
+<div id="gcash-modal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(74,16,96,0.7);z-index:100;align-items:center;justify-content:center;" onclick="if(event.target===this)this.style.display='none';">
+  <div style="background:#fff;border:4px solid #e5b8f4;padding:2rem;max-width:320px;width:90%;display:flex;flex-direction:column;align-items:center;gap:1rem;position:relative;">
+    <button onclick="document.getElementById('gcash-modal').style.display='none'" style="position:absolute;top:10px;right:12px;background:none;border:none;font-size:20px;cursor:pointer;color:#b06abf;">✕</button>
+    <p style="font-family:'Press Start 2P',monospace;font-size:8px;color:#4a1060;">scan to pay 💜</p>
+  
+    <img src="instapay-qr.jpeg" alt="GCash QR Code" style="width:200px;height:200px;object-fit:contain;border:2px solid #e5b8f4;">
+    <p style="font-family:'Press Start 2P',monospace;font-size:7px;color:#b06abf;text-align:center;line-height:1.8;">open gcash app<br>scan QR to send</p>
+  </div>
+</div>
+
+<script>
+const skyRows = [
+  ["#c084fc","#c084fc","#c084fc","#c084fc","#d8b4fe","#c084fc","#c084fc","#c084fc","#c084fc","#c084fc","#c084fc","#c084fc","#c084fc","#c084fc","#c084fc","#c084fc","#c084fc","#d8b4fe","#c084fc","#c084fc"],
+  ["#c084fc","#c084fc","#f9a8d4","#f9a8d4","#f9a8d4","#c084fc","#c084fc","#c084fc","#c084fc","#c084fc","#c084fc","#f9a8d4","#f9a8d4","#c084fc","#c084fc","#c084fc","#c084fc","#c084fc","#c084fc","#c084fc"],
+  ["#c084fc","#f9a8d4","#f9a8d4","#f9a8d4","#f9a8d4","#f9a8d4","#c084fc","#c084fc","#c084fc","#c084fc","#f9a8d4","#f9a8d4","#f9a8d4","#c084fc","#c084fc","#c084fc","#c084fc","#c084fc","#c084fc","#c084fc"],
+  ["#c084fc","#c084fc","#f9a8d4","#f9a8d4","#f9a8d4","#c084fc","#c084fc","#c084fc","#c084fc","#c084fc","#c084fc","#f9a8d4","#f9a8d4","#f9a8d4","#c084fc","#c084fc","#c084fc","#c084fc","#c084fc","#c084fc"],
+  ["#c084fc","#c084fc","#c084fc","#c084fc","#c084fc","#c084fc","#c084fc","#c084fc","#c084fc","#c084fc","#c084fc","#c084fc","#c084fc","#c084fc","#c084fc","#c084fc","#c084fc","#c084fc","#c084fc","#c084fc"],
+  ["#d8b4fe","#d8b4fe","#d8b4fe","#d8b4fe","#d8b4fe","#d8b4fe","#d8b4fe","#d8b4fe","#d8b4fe","#d8b4fe","#d8b4fe","#d8b4fe","#d8b4fe","#d8b4fe","#d8b4fe","#d8b4fe","#d8b4fe","#d8b4fe","#d8b4fe","#d8b4fe"],
+  ["#e9d5ff","#e9d5ff","#e9d5ff","#e9d5ff","#e9d5ff","#e9d5ff","#e9d5ff","#e9d5ff","#e9d5ff","#e9d5ff","#e9d5ff","#e9d5ff","#e9d5ff","#e9d5ff","#e9d5ff","#e9d5ff","#e9d5ff","#e9d5ff","#e9d5ff","#e9d5ff"],
+  ["#fce7f3","#fce7f3","#fce7f3","#fce7f3","#fce7f3","#fce7f3","#fce7f3","#fce7f3","#fce7f3","#fce7f3","#fce7f3","#fce7f3","#fce7f3","#fce7f3","#fce7f3","#fce7f3","#fce7f3","#fce7f3","#fce7f3","#fce7f3"],
+];
+
+const sky = document.getElementById('sky');
+skyRows.forEach(row => {
+  const rowEl = document.createElement('div');
+  rowEl.className = 'sky-row';
+  row.forEach(col => {
+    const px = document.createElement('span');
+    px.className = 'px';
+    px.style.background = col;
+    rowEl.appendChild(px);
+  });
+  sky.appendChild(rowEl);
+});
+
+const img = document.getElementById('avatar-img');
+const ph = document.getElementById('avatar-ph');
+if (img.getAttribute('src') && img.getAttribute('src') !== '') {
+  img.style.display = 'block';
+  ph.style.display = 'none';
+  img.onerror = () => { img.style.display = 'none'; ph.style.display = 'flex'; };
+}
+</script>
+</body>
+</html>
